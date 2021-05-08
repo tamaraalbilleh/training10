@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Happy holidays!</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
-        <img src="./assets/PM-Holiday-Image1.jpg" alt="hero" class="hero">
+        <img src="./assets/PM-Holiday-Image1.jpg" alt="hero" class="hero" id="hero">
         <section class="heroText">
             <img src="./assets/logo.png" alt="logo" class="logo">
             <h1>happy holidays!</h1>
         </section>
     </header>
 
-    <main>
-        <p class="p1">Enjoy the holidays with your family and friends  with these festive recipes and gift ideas!</p>
-        <section class="mainGrid">
+    <main >
+        <p class="p1" class="mainGrid" data-aos="fade-up" data-aos-duration="3000">Enjoy the holidays with your family and friends  with these festive recipes and gift ideas!</p>
+        <section class="mainGrid" data-aos="fade-up" data-aos-duration="3000">
 
             <section class="left">
+
                 <section class="innerGrid">
                 <img src="./assets/PM-Holiday-Image2.jpg" alt="image1" class="image1">
 
@@ -29,6 +33,7 @@
                         <h2>sweet berry pie</h2>
                         <p class="p2">the sweetest and easiest berry pie perfect for the Holidays!</p>
                     </section>
+
                 </section>
 
                 <button>Read more</button>
@@ -36,6 +41,7 @@
             </section>
 
             <section class="right">
+
                 <section class="innerGrid">
                     <img src="./assets/PM-Holiday-Image3.jpg" alt="image2" class="image2">
 
@@ -43,6 +49,7 @@
                         <h2>10 meaningful gifts</h2>
                         <p class="p2">worry no more with these gifts that your family will love!</p>
                     </section>
+
                 </section>
 
                 <button>Read more</button>
@@ -53,6 +60,7 @@
     </main>
 
     <footer>
+
         <section class="footerSocials">
             <h3>follow us on social media</h3>
             <img src="./assets/facebook.png" alt="fb">
@@ -60,12 +68,20 @@
             <img src="./assets/pinterest.png" alt="p">
             <img src="./assets/ig.png" alt="ig">
         </section>
+
         <section class="footerCopyRights">
             <p>Copyright 2019 Yoursite, All right reserved.</p>
             <p>You subscribed to our newsletter via our website, example.com</p>
-            <a href="">Unsubscribe from this list.</a>
+            <a href="#hero">Unsubscribe from this list.</a>
         </section>
+
     </footer>
-   <script src="./app.js"></script> 
+    
+    <script src="./app.js"></script> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
 </body>
 </html>
